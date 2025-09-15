@@ -1,0 +1,25 @@
+{
+  "name": "comment-check",
+  "version": "0.0.1",
+  "description": "GitHub App for PR diff checks",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsc --watch",
+    "probot": "probot run ./dist/app.js",
+    "debug": "node --inspect-brk ./node_modules/.bin/probot run ./dist/app.js"
+  },
+  "dependencies": {
+    "adm-zip": "0.5.16",
+    "parse-diff": "^0.11.1",
+    "probot": "13.4.7"
+  },
+  "devDependencies": {
+    "@octokit/types": "12.6.0",
+    "@octokit/webhooks-types": "^7.6.1",
+    "typescript": "^5.5.3",
+    "nodemon": "^3.1.0"
+  },
+  "private": true
+}
